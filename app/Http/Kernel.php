@@ -43,17 +43,6 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
-        'admin' => [
-            
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        ],
-
-        'user' => [
-            
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        ],
-
-
     ];
 
     /**

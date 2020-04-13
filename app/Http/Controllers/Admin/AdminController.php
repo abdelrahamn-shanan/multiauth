@@ -17,11 +17,28 @@ class AdminController extends Controller
         $this->middleware('auth');
     }
 
-    public function adminHome()
+    public function AdminLogin()
 
     {
 
-        return view('adminHome');
+        return view('adminlogin');
+
+    }
+
+    public function Login(Request $request)
+    {             
+      $input = $request->all();
+
+       $this->validate($request, [
+
+      'email' => 'unique:users|required|email|string',
+
+      'password' => 'required |min:6 | string',
+
+  ]);
+
+
+  return view  ('user.adminHome');
 
     }
 }

@@ -28,5 +28,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/login', 'User\UserController@UserHome');
+Route::get('/login', 'User\UserController@UserLogin')->name('user.login');
+Route::post('/login', 'User\UserController@Login')->name('user.home');
 

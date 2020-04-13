@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+|Admin Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', 'Admin\AdminController@adminHome')->name('admin.login')->middleware('is_admin');
-Route::post('login', 'Admin\AdminController@adminHome');
+Route::get('/login', 'Admin\AdminController@AdminLogin')->name('admin.login')->middleware('is_admin');
+Route::post('/login', 'Admin\AdminControlle@Login')->name('admin.home');

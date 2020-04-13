@@ -5,6 +5,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header"> Admin Dashboard</div>
+                <a href= "{{ route('/change) }}" >Reset Password</a> 
                 <div class="card-body">
 
                     You are Admin.
