@@ -17,14 +17,14 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     public function UserLogin()
 
     {
 
-        return view('user.userLogin');
+        return view('user.userlogin');
 
     }
     public function Login(Request $request)

@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/login', 'Admin\AdminController@AdminLogin')->name('admin.login')->middleware('is_admin');
-Route::post('/login', 'Admin\AdminControlle@Login')->name('admin.home');
+Route::post('/login', 'Admin\AdminController@Login')->name('admin.home');
